@@ -1,0 +1,96 @@
+/* styles.css */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 40px;
+    padding: 50px;
+    background-color: rgb(243, 227, 10); 
+  }
+  
+  header {
+    background-color: #dc7d68;
+    color: black;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  footer {
+    background-color: #a4b303;
+    color: black;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Productos (flexbox) */
+  .card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
+    text-align: center;
+  }
+  
+  .productos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Sobre nosotros (grid) */
+  .sobre-nosotros {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Responsividad */
+  @media (max-width: 768px) {
+    /* Estilos para pantallas pequeñas */
+    nav ul {
+      flex-direction: column;
+    }
+  
+    .card {
+      width: 100%;
+    }
+  }
+
+  /* Estilos para pantallas pequeñas */
+@media only screen and (max-width: 600px) {
+  .container {
+  grid-template-columns: 1fr; /* Una sola columna en pantallas
+  pequeñas */
+  }
+  }
+  /* Estilos para pantallas medianas */
+  @media only screen and (min-width: 768px) {
+  .container {
+  grid-template-columns: 1fr 1fr; /* Dos columnas en pantallas
+  medianas */
+  }
+  }
+  /* Estilos para pantallas grandes */
+  @media only screen and (min-width: 1200px) {
+  .container {
+  grid-template-columns: 1fr 1fr 1fr; /* Tres columnas en
+  pantallas grandes */
+  }
+  }

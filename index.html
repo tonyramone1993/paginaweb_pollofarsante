@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Pollo Farsante</title>
+    <link rel="stylesheet" href="styles.css"> </head>
+<body>
+    <header>
+        <h1>El Pollo Farsante</h1>
+        <h2>Restaurante Artesanal</h2>
+        <nav>
+            <ul>
+                <li><a href="productos.html">Nuestra Carta</a></li>
+                <li><a href="nosotros.html">Sobre Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="productos">
+            <h2>¡Bienvenido a Nuestro Restaurante!</h2>
+            <p>Disfruta de los mejores sándwiches, lomitos, milanesas y napolitanas de Pelotilehue</p>
+            <img src="hamburguesa_clasica.jpg" width=30% height="50%" alt="Hamburguesas">
+            <img src="milanesa_a_caballo.jpg" width=30% height="50%" alt="Milanesas">
+            <img src="pizza-con-muzzarella.jpg" width=30% height="50%" alt="Pizzas">
+        </section>
+
+        <section id="contactos">
+            <h3>Contáctanos</h3>
+            <form action="https://formspree.io/f/xqakbgge" method="POST">
+                <fieldset>
+                    <label for="nombre">Nombre:</label><br>
+                    <input type="text" id="nombre" name="nombre" required><br> 
+                    <label for="apellido">Apellido:</label><br>
+                    <input type="text" id="apellido" name="apellido" required><br> 
+                    <label for="email">Correo electrónico:</label><br> 
+                    <input type="email" id="email" name="email" required><br> 
+                    <label for="mensaje">Mensaje:</label><br> 
+                    <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br> 
+                    <button type="submit">Enviar</button> 
+                    <button type="reset">Borrar</button>
+                </fieldset>
+            </form>
+            <p>Visítanos en: Avenida Bio Bio 123, Pelotilehue</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 El Pollo Farsante. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
